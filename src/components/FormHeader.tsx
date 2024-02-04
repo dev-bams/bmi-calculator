@@ -1,7 +1,7 @@
 import icon from "../assets/images/bmi-icon.png";
 function FormHeader() {
   return (
-    <div className=" bg-accent text-slate-50 flex w-full justify-between p-4">
+    <div className=" bg-accent text-slate-50 flex w-full justify-between p-6 rounded-t-md">
       <div className="flex flex-col justify-center gap-1">
         <h1 className=" font-bold text-3xl">BMI Calculator</h1>
         <h2 className="">
