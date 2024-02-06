@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FormHeader from "../components/FormHeader";
 import FormBody from "./FormBody";
 import Result from "./Result";
 
 function Form() {
+  const [resultToggle, setResultToggle] = useState(false);
   const [BMI, setBMI] = useState(0);
   const [measurements, setMeasurements] = useState({ height: 0, weight: 0 });
   function assignMeasurements(name: string, measurement: number) {
@@ -23,12 +24,12 @@ function Form() {
     setBMI(BMI);
   }
   function handleSubmission(e: React.FormEvent<HTMLFormElement>) {
+    if (!resultToggle) {
+      setResultToggle(true);
+    }
     e.preventDefault();
-    console.log("submitted");
   }
 
-  console.log(measurements);
-  console.log(BMI);
   return (
     <div className="flex flex-col max-w-3xl self-center w-full p-6 rounded-t-md">
       <form
@@ -40,7 +41,7 @@ function Form() {
       >
         <FormHeader />
         <FormBody assignMeasurements={assignMeasurements} />
-        <Result BMI={BMI} />
+        {resultToggle && <Result BMI={BMI} />}
       </form>
     </div>
   );
