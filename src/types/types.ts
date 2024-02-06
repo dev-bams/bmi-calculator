@@ -15,4 +15,6 @@ type FormBodyProps = {
   assignMeasurements: (name: string, measurement: number) => void;
 };
 
-export type { FormInputProps, LabeledInputProps, FormBodyProps };
+type ResultProps = { BMI: number };
+
+export type { FormInputProps, LabeledInputProps, FormBodyProps, ResultProps };
