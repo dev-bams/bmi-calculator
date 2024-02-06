@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import FormHeader from "../components/FormHeader";
 import FormBody from "./FormBody";
 import Result from "./Result";
@@ -20,6 +20,7 @@ function Form() {
     height: number;
     weight: number;
   }) {
+    height /= 100;
     const BMI = weight / (height * height);
     setBMI(BMI);
   }

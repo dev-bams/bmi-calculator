@@ -11,12 +11,12 @@ function Result({ BMI }: ResultProps) {
     return "obese";
   }
   return (
-    <div className="flex flex-col items-center gap-2 p-4">
+    <div className="flex flex-col items-center gap-2 p-3 pb-6">
       <h2>
         Your Body Mass Index (BMI) is
-        <span className="font-bold text-3xl"> {BMI}</span>
+        <span className="font-bold text-3xl text-accent"> {BMI}</span>
       </h2>
-      <h2>you are {getCategory()}</h2>
+      <h2>you are <span className="font-bold">{getCategory()}</span></h2>
     </div>
   );
 }
