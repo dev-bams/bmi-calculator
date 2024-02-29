@@ -4,7 +4,7 @@ function Footer() {
       <h2>
         Designed & Developed by{" "}
         <a
-          href="https://khaleed.co/"
+          href="https://khaleed.co"
           target="_blank"
           className="font-bold hover:underline"
         >
