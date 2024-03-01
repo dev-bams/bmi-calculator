@@ -9,9 +9,9 @@ function FormInput({
 }: FormInputProps) {
   const [value, setValue] = useState("");
   return (
-    <div className=" flex bg-white min-h-[56px] outline-2 outline outline-slate-300 rounded-sm">
+    <div className=" flex bg-white min-h-[56px] outline-2 outline outline-slate-300 rounded-sm items-center">
       <input
-        className=" flex-grow outline-none pl-4"
+        className=" flex-grow outline-none pl-4 "
         type={type}
         name={name}
         value={value}
