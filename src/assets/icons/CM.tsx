@@ -9,6 +9,7 @@ function CM() {
       baseProfile="full"
       enableBackground="new 0 0 76.00 76.00"
       fill="#000000"
+      className="border"
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 

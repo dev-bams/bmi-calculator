@@ -8,9 +8,9 @@ function KG() {
 
   return (
     <svg
-      className="pr-1"
-      width="32px"
-      height="32px"
+      className="p-1 border"
+      width="45px"
+      height="45px"
       viewBox="0 0 24 24"
       id="Layer_1"
       data-name="Layer 1"
