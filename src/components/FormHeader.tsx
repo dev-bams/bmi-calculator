@@ -3,7 +3,7 @@ function FormHeader() {
   return (
     <div className=" bg-accent text-slate-50 flex w-full justify-between p-6 rounded-t-md">
       <div className="flex flex-col justify-center gap-1">
-        <h1 className=" font-bold text-3xl">BMI Calculator</h1>
+        <h1 className=" font-bold text-3xl">BMI Buddy</h1>
         <h2 className="">
           use this calculator to check your body mass index(BMI)
         </h2>
