@@ -2,11 +2,11 @@ function Footer() {
   return (
     <div className=" flex justify-center text-l p-2">
       <h2>
-        Designed & Developed by{" "}
+        🧃 by{" "}
         <a
           href="https://khaleed.co"
           target="_blank"
-          className="font-bold hover:underline"
+          className="font-bold text-accent"
         >
           Khaleed Opeloyeru
         </a>
